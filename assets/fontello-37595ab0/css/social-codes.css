@@ -1,0 +1,9 @@
+
+.icon-basketball:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-heart-empty:before { content: '\68'; } /* 'h' */
+.icon-instagram:before { content: '\69'; } /* 'i' */
+.icon-location:before { content: '\6c'; } /* 'l' */
+.icon-shopping-bag:before { content: '\70'; } /* 'p' */
+.icon-search:before { content: '\73'; } /* 's' */
+.icon-twitter:before { content: '\74'; } /* 't' */

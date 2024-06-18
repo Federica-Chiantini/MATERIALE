@@ -1,0 +1,566 @@
+/*   ### INIZIO STILI COMUNI ###  */
+* {
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: icone;
+    src: url(../fontello-37595ab0/font/social.woff2), url(../fontello-37595ab0/font/social.woff), url(../fontello-37595ab0/font/social.ttf)
+}
+
+#topHead div p,
+#centralHead div span,
+#centralHead div a,
+#centralHead div input,
+#topFoot div p,
+#bottomFoot p {/*tag che hanno lo stesso font-family (icone)*/
+    font-family: icone;
+    margin: 0 .5%;
+    cursor: pointer
+}
+
+body {
+    border: 2px solid #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #161616;
+    background-color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: auto
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+/*   ### FINE STILI COMUNI ###  */
+
+/*   ### INIZIO STILE HEADER ###  */
+header {
+    max-width: 1200px;
+    background-color: #d7d5d5
+}
+
+header section {
+    width: 100%
+}
+
+/*  ## INIZIO SEZIONE 1 ## */
+#topHead {
+    display: flex;
+    justify-content: space-between
+}
+
+#topHead div {
+    width: 25%
+}
+
+#topHead div p {/*icona basket*/
+    font-size: 1.2em;
+    margin-left: 5%
+}
+
+/*inizio stile nav*/
+#topHead nav {
+    width: 40%;
+    margin-top: .5%;
+    margin-right: 1%
+}
+
+#topHead nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: .8em
+}
+
+#topHead nav ul li {
+    border-right: 1px solid #161616;
+    padding: 0 3%
+}
+
+#topHead nav ul li:last-child {
+    padding-right: 0;
+    border-right: none
+}
+
+#topHead nav ul a {
+    text-decoration: none;
+    color: #161616;
+    padding: 1%;
+    cursor: pointer
+}
+
+#topHead nav ul a:hover {
+    border-bottom: #161616 dotted 2px
+}
+/*fine stile nav*/
+/*  ## FINE SEZIONE 1 ## */
+
+/*  ## INIZIO SEZIONE 2 ## */
+#centralHead {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeecec;
+    text-align: center
+}
+
+#centralHead div {
+    width: 20%;
+    padding: .5% 0 .5% 1%
+}
+
+#centralHead div:first-of-type a {
+    display: block
+}
+
+#centralHead div a img {/*logo*/
+    width: 40%
+}
+
+/*inizio stile nav*/
+#centralHead nav {
+    width: 50%;
+    font-size: .7em;
+    padding: 1.5% 0
+}
+
+#centralHead nav ul {
+    display: flex;
+    justify-content: center
+}
+
+#centralHead nav ul li {
+    width: calc(20% - 20px)
+}
+
+#centralHead nav ul li a {
+    text-decoration: none;
+    color: #161616;
+    font-weight: bold;
+    padding: 1%;
+    cursor: pointer
+}
+
+#centralHead nav ul li a:hover {
+    border-bottom: #161616 dotted 2px
+}
+/*fine stile nav*/
+
+#centralHead div:nth-child(3) {
+    width: 20%;
+    padding: 1% 0 1% 1%;
+    float: right
+}
+
+#centralHead div:nth-child(3) input { /*barra search*/
+    border-radius: 30px;
+    width: 50%;
+    padding: 3%;
+    border: none;
+    background-color: #d7d5d5;
+    font-size: .8em
+}
+
+#centralHead div:nth-child(3) input:focus {
+    border: solid 2px #202020;
+    background-color: #eae9e9
+}
+
+#borsetta {
+    text-decoration: none;
+    color: #161616
+}
+/*  ## FINE SEZIONE 2 ## */
+
+/*  ## INIZIO SEZIONE 3 ## */
+#bottomHead {
+    width: 100%
+}
+
+#bottomHead div {
+    margin: 0 auto;
+    text-align: center
+}
+
+#bottomHead div p {
+    margin: .5%
+}
+
+#bottomHead div:nth-child(2) {
+    font-size: .8em
+}
+/*  ## FINE SEZIONE 3 ## */
+/*   ### FINE STILE HEADER ###  */
+
+/*   ### INIZIO STILE MAIN ###  */
+main {
+    max-width: 800px;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-around
+}
+
+/*  ## INIZIO SEZIONE 1 ## */
+#topMain {
+    width: 66%
+}
+
+#topMain>div:first-of-type {/*disclaimer membership*/
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 1%
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #db5e04;
+    margin: 0 .5%
+}
+
+#topMain>div:first-of-type p {
+    width: 100%;
+    font-size: .8em;
+    margin: 0
+}
+
+#topMain>div:first-of-type p a {
+    display: inline-block;
+    color: #161616;
+    border-bottom: 3px dotted #ccc
+}
+
+#topMain>div:first-of-type p a:hover {
+    color: #db5e04
+}
+
+#topMain h1 {
+    margin: 1% 0;
+    font-size: 1.3em
+}
+
+/*stile comune delle due scarpe*/
+#topMain .scarpaPresa { /*classe comune dei due div che contengono le scarpe*/
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-areas: "img   testo     prezzo"
+}
+
+#topMain .scarpaPresa div:first-of-type { /*div con img*/
+    grid-area: img
+}
+
+#topMain .scarpaPresa div:first-of-type img {
+    width: 80%
+}
+
+#topMain .scarpaPresa div:nth-of-type(2) {/*testo con info scarpa*/
+    grid-area: testo
+}
+
+#topMain .scarpaPresa div:nth-of-type(3) { /*prezzo scarpa*/
+    grid-area: prezzo;
+    text-align: right
+}
+
+#topMain .scarpaPresa h4 {
+    margin: 0 0 1% .5%
+}
+
+#topMain .scarpaPresa p {
+    margin: .5% 0 1% .5%
+}
+
+.select { /*div contenitore dei due select*/
+    display: flex;
+    justify-content: space-between
+}
+
+#taglie,
+#quantita,
+#quantita2,
+#taglie2 { /*stile comune a tutti i select*/
+    border: none;
+    background-color: #f2f2f2
+}
+
+#topMain aside { /*div con icone*/
+    margin-top: 1%;
+    padding: 1%
+}
+
+#topMain .icone {
+    display: inline-block
+}
+
+/*CSS SPRITE*/
+#topMain .icone div {
+    min-width: 16px;
+    min-height: 16px;
+    background-image: url(/assets/images/iconePagScarpa.png);
+    cursor: pointer
+}
+
+#topMain .icone:nth-child(2) div {
+    background-position-x: -21px
+}
+
+#topMain .icone:nth-child(3) div {
+    background-position-x: -41px
+}
+/*FINE CSS SPRITE*/
+
+#prezzoUomo,
+#prezzoDonna { /*div per contenere cambio del prezzo con JS*/
+    display: inline-block
+}
+
+#topMain .altriLink { /*div con ritiro gratuito e trova negozio*/
+    color: #171414;
+    display: block;
+    margin-bottom: 1%
+}
+
+.altriLink p:first-child {
+    border-bottom: 1px solid #161616;
+    width: 67%;
+    cursor: pointer
+}
+/*fine stile comune delle due scarpe*/
+
+#preferAside h2 {/*div con dentro sezione preferiti*/
+    font-size: 1.2em;
+    margin: .5% 0
+}
+
+#preferAside p {
+    font-size: .95em;
+    margin: .5% 0
+}
+
+#preferAside p>a {
+    text-decoration: none;
+    display: inline-block;
+    color: #161616;
+    border-bottom: 3px dotted #ccc
+}
+
+#preferAside p>a:hover {
+    color: #db5e04
+}
+/*  ## FINE SEZIONE 1 ## */
+
+/*  ## INIZIO SEZIONE 2 ## */
+#bottomMain {
+    width: 31%
+}
+
+#bottomMain h2 {
+    font-size: 1.2em;
+    margin: .5% 0
+}
+
+#bottomMain div {
+    font-size: .8em;
+    margin: 2% 0
+}
+
+#bottomMain p,
+#bottomMain span {
+    margin: 4% 0
+}
+
+#codice { /*codice promozionale*/
+    cursor: pointer
+}
+
+#codice::after { /*pseudoelemento after su codice promozionale*/
+    content: "▼";
+    margin: 0;
+    padding-left: 10%
+}
+
+#promozione { /*sezione con dentro input e bottone per inserire codice promozionale*/
+    width: 100%;
+    overflow: auto
+}
+
+.rimuovi { /*classe per aprire e chiudere il codice promozionale*/
+    display: none
+}
+
+#promozione input {
+    width: 40%;
+    float: left
+}
+
+#promozione button {
+    width: 30%;
+    float: right;
+    padding: 1%;
+    margin-right: 4%;
+    border-radius: 50px;
+    font-size: .6em;
+    background-color: #f2f2f2;
+    color: #161616
+}
+
+#promozione button:hover {
+    background-color: #0a0a0a;
+    color: #fef8f8
+}
+
+#colonna1 { /*righe spedizione e subtotale*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+#colonna1 p {
+    width: 50%
+}
+
+#colonna1 p:nth-of-type(2),
+#colonna1 p:nth-of-type(4) { /*elementi che vanno a destra*/
+    text-align: right
+}
+
+#colonna2 { /*riga totale*/
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 3% 0;
+    display: flex;
+    justify-content: space-between
+}
+
+#bottoni {/*bottoni finali*/
+    width: 100%
+}
+
+#bottoni a {
+    width: 95%;
+    display: block;
+    text-align: center;
+    padding: 7%;
+    border-radius: 50px;
+    margin: 4% 0 2%;
+    font-size: .8em;
+    background-color: #0a0a0a;
+    color: #fef8f8;
+    text-decoration: none
+}
+
+#bottoni a:hover {
+    background-color: #f2f2f2;
+    border: 1px solid #0a0a0a;
+    color: #161616
+}
+
+#paypal {
+    width: 95%;
+    background-color: #f2f2f2;
+    border: 1px solid #0a0a0a;
+    border-radius: 50px;
+    margin: 4% 0 2%
+}
+
+#paypal:hover {
+    background-color: #0a0a0a;
+    color: #1c8fd7
+}
+
+#paypal img {
+    margin: 0 auto;
+    width: 23%
+}
+/*  ## FINE SEZIONE 2 ## */
+/*   ### FINE STILE MAIN ###  */
+
+/*   ### INIZIO STILE FOOTER ###  */
+footer {
+    background-color: #0a0a0a;
+    color: #fef8f8;
+    padding: 2%
+}
+
+/*  ## INIZIO SEZIONE 1 ## */
+#topFoot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+/*inizio stile nav*/
+#topFoot nav {
+    width: 50%
+}
+
+#topFoot nav ul {
+    display: flex;
+    justify-content: flex-start
+}
+
+#topFoot nav ul li {
+    width: calc(25% - 20px);
+    text-align: left
+}
+
+#topFoot nav ul li:first-of-type {
+    margin-left: 0
+}
+
+#topFoot nav ul li a {
+    text-decoration: none;
+    color: #fef8f8;
+    padding: 1%;
+    font-size: .8em;
+    cursor: pointer
+}
+
+#topFoot nav ul li a:hover {
+    border-bottom: #fef8f8 dotted 2px
+}
+/*fine stile nav*/
+
+#topFoot div {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end
+}
+
+#topFoot div p {
+    margin-left: 10%
+}
+/*  ## FINE SEZIONE 1 ## */
+
+/*  ## INIZIO SEZIONE 2 ## */
+#bottomFoot {
+    width: 100%;
+    font-size: .8em
+}
+
+#bottomFoot div:first-child {/*div contenente icona e nazione di localizzazione*/
+    width: 20%;
+    padding: 1% 1% 1% 0
+}
+
+#bottomFoot div:first-child p {
+    width: 10%;
+    display: inline-block
+}
+
+#bottomFoot div:first-child span {
+    width: 80%;
+    display: inline-block
+}
+
+#bottomFoot div:nth-of-type(2) {/*copyright*/
+    width: 100%;
+    text-align: center
+}
+/*  ## FINE SEZIONE 2 ## */
+/*   ### FINE STILE FOOTER ###  */

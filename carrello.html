@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Progetto LabAir">
+    <title>LabAir. Just Do it.</title>
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/carrello.css">
+    <script src="assets/javascript/carrello.js" defer></script>
+</head>
+
+<body>
+    <!--## HEADER ##-->
+    <header>
+        <section id="topHead">
+            <!--SEZIONE 1-->
+            <div>
+                <p>b</p><!--canestro da basket-->
+            </div>
+            <nav>
+                <ul><!--nav in alto a destra-->
+                    <li><a href="#" title="Negozi nel territorio">Negozio</a></li>
+                    <li><a href="#" title="Help">Aiuto</a></li>
+                    <li><a href="#" title="Join us">Iscriviti</a></li>
+                    <li><a href="#" title="Enta nel tuo account">Entra</a></li>
+                </ul>
+            </nav>
+        </section> 
+            <!--FINE SEZIONE 1-->
+        <!--SEZIONE 2-->
+        <section id="centralHead">
+            <div><!--logo-->
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo LabAir">
+                </a>
+            </div>
+            <nav>
+                <ul><!--nav centrale-->
+                    <li><a href="#" title="Nuovi prodotti">In evidenza</a></li>
+                    <li><a href="#" title="Sezione Uomo">Uomo</a></li>
+                    <li><a href="#" title="Sezione Donna">Donna</a></li>
+                    <li><a href="#" title="Sezione bambini">Bambini</a></li>
+                    <li><a href="#" title="Saldi e occasioni">Saldi</a></li>
+                </ul>
+            </nav>
+            <div><!--barra di ricerca e bottoni preferiti e carrello-->
+                <input type="text" placeholder="s  Cerca">
+                <span>h</span>
+                <a href="carrello.html" id="borsetta">p</a>
+            </div>
+        </section>
+        <!--FINE SEZIONE 2-->
+    </header>
+    <!--## FINE HEADER-->
+    <!--## MAIN ##-->
+        <main>
+            <!--# SEZIONE 1 #-->
+            <section id="topMain">
+                <!--disclaimer membership-->
+            <div>
+                <h3>Consegna gratuita per i membri</h3>
+                <p>Diventa membro per ottenere la spedizione gratuita. <a href="#">Unisciti</a> o <a href="#">Accedi</a>
+                </p>
+            </div>
+            <!--fine disclaimer membership-->
+            <h1>Carrello</h1>
+            <!--descrizione scarpe-->
+            <div>
+                <!-- *scarpa 1* -->
+                <section class="scarpaPresa" id="Uno">
+                <div><!--immagine scarpa-->
+                    <img src="assets/images/Scarpa/4.jpg" alt="scarpa">
+                </div>
+<div> <!--descrizione scarpa-->
+                        <h4>Nike Dunk Low</h4>
+                        <p>Scarpa - Donna</p>
+                        <p>Bianco/Nero</p>
+                        <div class="select">
+                    <select id="taglie"><!--taglie su javascript-->
+                    </select>     
+                    <select id="quantita" name="taglieDonna" onchange="opzioneSelezionata(quantita)">
+                        <option value="1">Quantita' - 1</option>
+                        <option value="2">Quantita' - 2</option>
+                        <option value="3">Quantita' - 3</option>
+                        <option value="4">Quantita' - 4</option>
+                        <option value="5">Quantita' - 5</option>
+                    </select>
+                    </div>
+                    <aside><!--div con icone-->
+                        <div class="icone">
+                            <div></div>
+                        </div>
+                        <div class="icone">
+                            <div></div>
+                        </div>
+                        <div class="icone bin" id="bin">
+                            <div></div>
+                        </div>
+                    </aside>  
+</div> <!--prezzo-->
+<div>&euro;<p id="prezzoDonna">89.99</p></div>
+<div class="altriLink">
+    <p>ritiro gratuito</p>
+    <p>Trova un negozio</p>
+</div>
+</section> 
+                <!-- *fine scarpa 1* -->   
+                <!-- *scarpa 2* -->     
+<section class="scarpaPresa" id="Due">
+    <div><!--immagine scarpa-->
+        <img src="assets/images/Scarpa_2/6-2.jpg" alt="scarpa">
+    </div>
+<div><!--descrizione scarpa-->
+            <h4>Nike Dunk Low</h4>
+            <p>Scarpa - Uomo</p>
+            <p>Bianco/Verde</p>
+<div class=select>
+            <select id="taglie2"><!--taglie su javascript-->
+            </select>     
+            <select id="quantita2" name="taglieUomo" onchange="opzioneSelezionata(quantita2)">
+                <option value="1">Quantita' - 1</option>
+                <option value="2">Quantita' - 2</option>
+                <option value="3">Quantita' - 3</option>
+                <option value="4">Quantita' - 4</option>
+                <option value="5">Quantita' - 5</option>
+            </select>
+</div>
+        <aside><!--div con icone-->
+            <div class="icone">
+                <div></div>
+            </div>
+            <div class="icone">
+                <div></div>
+            </div>
+            <div class="icone bin seconda">
+                <div></div>
+            </div>
+        </aside>  
+</div> <!--prezzo-->
+<div>&euro;<p id="prezzoUomo">99.99</p></div>
+<div class="altriLink">
+<p>ritiro gratuito</p>
+<p>Trova un negozio</p>
+</div>
+</section>
+                <!-- *fine scarpa 2* -->         
+</div>
+<!--fine descrizione scarpe-->
+<!--preferiti-->
+<aside id="preferAside">
+    <h2>Preferiti</h2>
+    <p>Vuoi visualizzare i preferiti?</p>
+    <p><a href="#">Unisciti</a> o <a href="#">Accedi</a></p>
+</aside>
+</section>
+<!--# FINE SEZIONE 1 #-->
+<!--# SEZIONE 2 #-->
+<aside id="bottomMain">
+    <!--riepilogo-->
+    <h2>Riepilogo</h2>
+    <div id="codice" onclick="promozioneInput()">Hai un codice promozionale?</div>
+<section id="promozione" class="rimuovi">
+        <input type="text" placeholder="codice"> 
+        <button type="button">Applica</button>
+</section>
+<!--fine riepilogo-->
+<!--colonne con subtotale-->
+<div id="prezzi">
+    <section id="colonna1">
+            <p>Subtotale</p>
+            <p id="subtot">//</p>
+            <p>Costi di spedizione</p>
+            <p>Gratis</p>
+    </section>
+        <section id="colonna2">
+            <p>Totale</p>
+            <p id="tot">//</p>
+        </section>
+</div>
+<!--fine colonne con subtotale-->
+<!--bottoni per andare al pagamento-->
+<section id="bottoni">
+        <a href="pagamentoOspite.html" id="paga">Vai al pagamento</a>
+        <div id="paypal"> <img src="assets/images/Paypal.png" alt=""></div>
+</section>
+<!--fine bottoni per andare al pagamento-->
+    </aside>
+    <!--# FINE SEZIONE 2 #-->
+        </main>
+    <!--## FINE MAIN-->
+    <!-- ## FOOTER ## -->
+    <footer>
+        <!--SEZIONE 1-->
+        <section id="topFoot">
+            <nav><!--nav footer-->
+                <ul>
+                    <li><a href="#" title="Acquisto gift card">Carte regalo</a></li>
+                    <li><a href="#" title="Help">Aiuto & FAQ</a></li>
+                    <li><a href="#" title="Informazioni sulla nostra azienda">Compagnia</a></li>
+                    <li><a href="#" title="I nostri contatti">Contatti</a></li>
+                </ul>
+            </nav>
+            <div><!--bottoni social-->
+                <p>f</p>
+                <p>i</p>
+                <p>t</p>
+            </div>
+        </section>
+        <!--FINE SEZIONE 1-->
+        <!--SEZIONE 2-->
+        <section id="bottomFoot">
+            <div>
+                <p>l</p><!--localizzazione-->
+                <span>Italia</span>
+            </div><!--copyright-->
+            <div>&copy; 2024, Sito realizzato da Federica Chiantini come primo progetto del corso Front End Development
+                di <a href="https://www.labfortraining.it/" title="sito della scuola">LabForTraining</a></div>
+        </section>
+        <!--FINE SEZIONE 2-->
+    </footer>
+    <!--## FINE FOOTER-->
+</body>
+
+</html>

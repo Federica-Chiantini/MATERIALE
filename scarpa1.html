@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Progetto LabAir">
+    <title>LabAir. Just Do it.</title>
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/scarpa1.css">
+    <script src="assets/javascript/scarpa1.js" defer></script>
+</head>
+
+<body>
+    <!--## HEADER ##-->
+    <header>
+        <!--# carrello ##-->
+        <section id="carrello">
+            <div>
+                <p>Aggiunto al carrello</p>
+                <button type="button" id="esci" onclick="esci()">x</button>
+            </div>
+<div>
+                <img src="assets/images/Scarpa/4.jpg" alt="scarpa">
+<div>
+                    <h4>Nike Dunk Low</h4>
+                    <p>Scarpa - Donna</p>
+                    <p>Taglia - <span id="numScarpa">/</span></p>
+                    <p>&euro;89.99</p>
+</div>
+</div>
+<button type="button" class="vediCarello" onclick="VaiACarrello()">Visualizza carrello</button>
+<button type="button" class="pagamento" onclick="VaiAPagamento()">Pagamento</button>
+        </section>
+        <!--# fine carrello ##-->
+        <!--SEZIONE 1-->
+        <section id="topHead">
+            <div>
+                <p>b</p><!--canestro da basket-->
+            </div>
+            <nav>
+                <ul><!--nav in alto a destra-->
+                    <li><a href="#" title="Negozi nel territorio">Negozio</a></li>
+                    <li><a href="#" title="Help">Aiuto</a></li>
+                    <li><a href="#" title="Join us">Iscriviti</a></li>
+                    <li><a href="#" title="Enta nel tuo account">Entra</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--FINE SEZIONE 1-->
+        <!--SEZIONE 2-->
+        <section id="centralHead">
+            <div><!--logo-->
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo LabAir">
+                </a>
+            </div>
+            <nav><!--nav centrale-->
+                <ul>
+                    <li><a href="#" title="Nuovi prodotti">In evidenza</a></li>
+                    <li><a href="#" title="Sezione Uomo">Uomo</a></li>
+                    <li><a href="#" title="Sezione Donna">Donna</a></li>
+                    <li><a href="#" title="Sezione bambini">Bambini</a></li>
+                    <li><a href="#" title="Saldi e occasioni">Saldi</a></li>
+                </ul>
+            </nav>
+            <div><!--barra di ricerca e bottoni preferiti e carrello-->
+                <input type="text" placeholder="s  Cerca">
+                <span>h</span>
+                <a href="carrello.html" id="borsetta">p</a>
+            </div>
+        </section>
+        <!--FINE SEZIONE 2-->
+        <!--SEZIONE 3-->
+        <section id="bottomHead">
+            <div><!--disclaimer-->
+                <p>Consegna e reso gratuito</p>
+            </div>
+            <div>Tutti i membri hanno la spedizione gratuita e il reso entro 30 giorni</div>
+        </section>
+        <!--FINE SEZIONE 3-->
+    </header>
+    <!--## FINE HEADER-->
+    <!--# MAIN #-->
+    <div id="wrapper"><!--contenitore per position relative per sfondo nero-->
+        <main>
+            <!--SEZIONE 1-->
+            <section id="topMain"><!--contenitore mini div con scarpe e video-->
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/1.jpg" alt="suola della scarpa">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/2.jpg" alt="due scarpe dall'alto">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/3.jpg" alt="scarpa rivolta verso destra">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/4.jpg" alt="scarpa rivolta verso sinistra">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/5.jpg" alt="particolare tomaia della scarpa">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/6.jpg" alt="due scarpe viste di tre quarti">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/7.jpg" alt="modello con scarpe">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/8.jpg" alt="scarpe viste da dietro">
+                </div>
+                <div class="scarpe">
+                    <img src="assets/images/Scarpa/9.jpg" alt="particolare parte dietro della scapa">
+                </div>
+                <div>
+                    <video id="videoS" autoplay muted><!--video-->
+                        <source src="assets/images/Scarpa/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <!--FINE SEZIONE 1-->
+            <!--SEZIONE 2-->
+            <section id="centralMain">
+            <div><!--contenitore con scarpa in grande-->
+                <img src="assets/images/Scarpa/4.jpg" alt="immagine scarpa">
+            </div>
+            <iframe class="video" src="assets/images/Scarpa/video.mp4" frameborder="0" allowfullscreen id="frameVideo" autoplay muted></iframe><!--iframe con video di default display none-->
+            </section>
+            <!--FINE SEZIONE 2-->
+            <!--SEZIONE 3-->
+            <section id="bottomMain">
+            <div><!--div descrizione-->
+                <h4>Nike Dunk Low</h4>
+                <p>Scarpa - Donna</p>
+                <p>&euro;89.99</p>
+                <div id="paginaScarpa">
+                    <a href="scarpa2.html" title="collegamento scarpa da uomo">
+                        <img src="assets/images/Scarpa_2/6-2.jpg" alt="scarpa uomo">
+                    </a>
+                </div>
+                <h3>Seleziona una taglia</h3>
+            </div>
+            <div id="taglieDiv">
+                <ul id="taglieDonna" class="taglie"></ul><!--inserite con javascript-->
+                <span></span>
+            </div>
+            <div><!--bottoni-->
+                <button type="button" id="compra">AGGIUNGI AL CARRELLO p</button>
+                <button type="button" id="preferiti">PREFERITI h</button>
+            </div>
+            </section>
+            <!--FINE SEZIONE 3-->
+        </main>
+            <!--## FINE MAIN-->
+        <span id="sfondoNero"></span><!--sfondo nero-->
+        </div><!--fine div id=wrapper-->
+    <!-- # FOOTER # -->
+    <footer>
+        <!--SEZIONE 1-->
+        <section id="topFoot">
+            <nav><!--nav footer-->
+                <ul>
+                    <li><a href="#" title="Acquisto gift card">Carte regalo</a></li>
+                    <li><a href="#" title="Help">Aiuto & FAQ</a></li>
+                    <li><a href="#" title="Informazioni sulla nostra azienda">Compagnia</a></li>
+                    <li><a href="#" title="I nostri contatti">Contatti</a></li>
+                </ul>
+            </nav>
+            <div><!--bottoni social-->
+                <p>f</p>
+                <p>i</p>
+                <p>t</p>
+            </div>
+        </section>
+        <!--FINE SEZIONE 1-->
+        <!--SEZIONE 2-->
+        <section id="bottomFoot">
+            <div>
+                <p>l</p><!--localizzazione-->
+                <span>Italia</span>
+            </div><!--copyright-->
+            <div>&copy; 2024, Sito realizzato da Federica Chiantini come primo progetto del corso Front End Development
+                di <a href="https://www.labfortraining.it/" title="sito della scuola">LabForTraining</a></div>
+        </section>
+        <!--FINE SEZIONE 2-->
+    </footer>
+    <!--## FINE FOOTER-->
+</body>
+
+</html>

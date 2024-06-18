@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Progetto LabAir">
+    <title>LabAir. Just Do it.</title>
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <script src="assets/javascript/index.js" defer></script>
+</head>
+
+<body>
+    <!--## HEADER ##-->
+    <header>
+        <!--SEZIONE 1-->
+        <section id="topHead">
+            <div>
+                <p>b</p><!--canestro da basket-->
+            </div>
+            <nav>
+                <ul><!--nav in alto a destra-->
+                    <li><a href="#" title="Negozi nel territorio">Negozio</a></li>
+                    <li><a href="#" title="Help">Aiuto</a></li>
+                    <li><a href="#" title="Join us">Iscriviti</a></li>
+                    <li><a href="#" title="Enta nel tuo account">Entra</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--FINE SEZIONE 1-->
+        <!--SEZIONE 2-->
+        <section id="centralHead">
+            <div><!--logo-->
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo LabAir">
+                </a>
+            </div>
+            <nav><!--nav centrale-->
+                <ul>
+                    <li><a href="#" title="Nuovi prodotti">In evidenza</a></li>
+                    <li><a href="#" title="Sezione Uomo">Uomo</a></li>
+                    <li><a href="#" title="Sezione Donna">Donna</a></li>
+                    <li><a href="#" title="Sezione bambini">Bambini</a></li>
+                    <li><a href="#" title="Saldi e occasioni">Saldi</a></li>
+                </ul>
+            </nav>
+            <div><!--barra di ricerca e bottoni preferiti e carrello-->
+                <input type="text" placeholder="s  Cerca">
+                <span>h</span>
+                <a href="carrello.html" id="borsetta">p</a>
+            </div>
+        </section>
+        <!--FINE SEZIONE 2-->
+        <!--SEZIONE 3-->
+        <section id="bottomHead">
+            <div><!--disclaimer-->
+                <p>Consegna e reso gratuito</p>
+            </div>
+            <div>Tutti i membri hanno la spedizione gratuita e il reso entro 30 giorni</div>
+        </section>
+        <!--FINE SEZIONE 3-->
+    </header>
+    <!--## FINE HEADER-->
+    <!--# MAIN #-->
+    <main>
+        <!--SEZIONE 1-->
+        <section id="topMain"><!--Hero banner-->
+            <img src="assets/images/Home-page/hero-banner.jpg" alt="due ragazzi che corrono">
+            <div><!--div con scritte-->
+                <h2>REGALA IL MEGLIO</h2>
+                <p>Ispirazione e movimento: il regalo perfetto</p>
+            </div>
+            <div><!--bottoni-->
+                <button type="button">Acquista</button>
+                <button type="button">Bambini</button>
+            </div>
+        </section>
+        <!--FINE SEZIONE 1-->
+        <!--SEZIONE 2-->
+        <section id="centralMain">
+            <div class="titBottoni"><!--titolo e bottoni-->
+                <h3>I trend della settimana</h3>
+                <aside id="bottoniScarpe" class="bottoniMain">
+                    <button type="button" onclick="bottoneSlider('scarpeUno')">&#129104;</button>
+                    <button type="button" onclick="bottoneSlider('scarpeDue')">&#129106;</button>
+                </aside>
+            </div><!---->
+            <!--slider scarpe-->
+            <section id="scarpaMain">
+                <div class="scarpaSlider">
+                    <a href="scarpa1.html" title="collegamento scarpa1" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_1.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Dunk Low</h4>
+                            <p>Scarpa - Donna</p>
+                            <p>€89.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+                <div class="scarpaSlider">
+                    <a href="scarpa2.html" title="collegamento scarpa2" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_2.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Air Force 1 '07</h4>
+                            <p>Scarpa - Uomo</p>
+                            <p>€109.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+                <div class="scarpaSlider">
+                    <a href="scarpa1.html" title="collegamento scarpa1" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_3.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Dunk Low</h4>
+                            <p>Scarpa - Uomo</p>
+                            <p>€99.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+                <div class="scarpaSlider">
+                    <a href="scarpa2.html" title="collegamento scarpa2" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_4.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Air Force 1 '07</h4>
+                            <p>Scarpa - Donna</p>
+                            <p>€105.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+                <div class="scarpaSlider">
+                    <a href="scarpa1.html" title="collegamento scarpa1" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_5.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Dunk High Retro</h4>
+                            <p>Scarpa - Uomo</p>
+                            <p>€147.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+                <div class="scarpaSlider">
+                    <a href="scarpa2.html" title="collegamento scarpa2" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_6.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Air Max 95</h4>
+                            <p>Scarpa - Uomo</p>
+                            <p>€175.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+                <div class="scarpaSlider">
+                    <a href="scarpa1.html" title="collegamento scarpa1" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_7.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Dunk Low</h4>
+                            <p>Scarpa - Bambini</p>
+                            <p>€69.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+                <div class="scarpaSlider">
+                    <a href="scarpa2.html" title="collegamento scarpa2" target="_blank">
+                        <img src="assets/images/Home-page/scarpa_8.jpg" alt="scarpa">
+                        <div>
+                            <h4>Nike Dunk Low</h4>
+                            <p>Scarpa - Bambini</p>
+                            <p>€72.99</p>
+                        </div>
+                    </a>
+                </div><!---->
+            </section>
+            <!--fine slider scarpe-->
+            <div class="titBottoni"><!--titolo e bottoni 2-->
+                <h3>Acquista per sport</h3>
+                <aside class="bottoniMain" id="bottoniSport">
+                    <button type="button" onclick="bottoneSlider('sportUno')">&#129104;</button>
+                    <button type="button" onclick="bottoneSlider('sportDue')">&#129106;</button>
+                </aside>
+            </div><!---->
+            <!--slider sport-->
+            <section id="sportMain">
+                <div class="sportSlider">
+                    <img src="assets/images/Home-page/sport_1.jpg" alt="calciatrice">
+                    <div>
+                        <h4>Calcio</h4>
+                    </div>
+                </div><!---->
+                <div class="sportSlider">
+                    <img src="assets/images/Home-page/sport_2.jpg" alt="ballerino">
+                    <div>
+                        <h4>Danza</h4>
+                    </div>
+                </div><!---->
+                <div class="sportSlider">
+                    <img src="assets/images/Home-page/sport_3.jpg" alt="canestrista">
+                    <div>
+                        <h4>Basket</h4>
+                    </div>
+                </div><!---->
+                <div class="sportSlider">
+                    <img src="assets/images/Home-page/sport_4.jpg" alt="tennista">
+                    <div>
+                        <h4>Tennis</h4>
+                    </div>
+                </div><!---->
+                <div class="sportSlider">
+                    <img src="assets/images/Home-page/sport_5.jpg" alt="ginnasta">
+                    <div>
+                        <h4>Palestra</h4>
+                    </div>
+                </div><!---->
+                <div class="sportSlider">
+                    <img src="assets/images/Home-page/sport_6.jpg" alt="atleta">
+                    <div>
+                        <h4>Atletica</h4>
+                    </div>
+                </div><!---->
+            </section>
+            <!--Fine slider sport-->
+            <div class="titBottoni"> <!--titolo e bottoni 3-->
+                <h3>Membership Nike</h3>
+                <aside class="bottoniMain" id="bottoniMember">
+                    <button type="button" onclick="bottoneSlider('memberUno')">&#129104;</button>
+                    <button type="button" onclick="bottoneSlider('memberDue')">&#129106;</button>
+                </aside>
+            </div><!---->
+            <!--slder memberships-->
+            <section id="memberMain">
+                <div class="memberSlider">
+                    <img src="assets/images/Home-page/banner_1.jpg" alt="ragazza e scarpa">
+                    <div>
+                        <p>Sconti su misura per te</p>
+                        <button type="button">Acquista</button>
+                    </div>
+                </div><!---->
+                <div class="memberSlider">
+                    <img src="assets/images/Home-page/banner_2.jpg" alt="ragazza che fischia">
+                    <div>
+                        <p>Scopri lo stile "Nike"</p>
+                        <button type="button">Stile "Nike"</button>
+                    </div>
+                </div><!---->
+                <div class="memberSlider">
+                    <img src="assets/images/Home-page/banner_3.jpg" alt="due ragazzi visti dall'alto con telefono">
+                    <div>
+                        <p>Tieniti aggiornato sulle novità</p>
+                        <button type="button">Social Media</button>
+                    </div>
+                </div><!---->
+                <div class="memberSlider">
+                    <img src="assets/images/Home-page/banner_4.jpg" alt="gruppo di ragazzi">
+                    <div>
+                        <p>Unisciti a noi</p>
+                        <button type="button">Nike club</button>
+                    </div>
+                </div><!---->
+                <div class="memberSlider">
+                    <img src="assets/images/Home-page/banner_5.jpg" alt="due ragazzi con il telefono">
+                    <div>
+                        <p>Preview esclusive solo per te</p>
+                        <button type="button">Solo per te</button>
+                    </div>
+                </div><!---->
+                <div class="memberSlider">
+                    <img src="assets/images/Home-page/banner_6.jpg" alt="due ragazze che si abbracciano">
+                    <div>
+                        <p>Facci sapere il tuo parere</p>
+                        <button type="button">Feedback</button>
+                    </div>
+                </div><!---->
+            </section>
+            <!--fine slider memberships-->
+        </section>
+        <!--FINE SEZIONE 2-->
+    </main>
+    <!--## FINE MAIN-->
+    <!-- # FOOTER # -->
+    <footer>
+        <!--SEZIONE 1-->
+        <section id="topFoot">
+            <nav><!--nav footer-->
+                <ul>
+                    <li><a href="#" title="Acquisto gift card">Carte regalo</a></li>
+                    <li><a href="#" title="Help">Aiuto & FAQ</a></li>
+                    <li><a href="#" title="Informazioni sulla nostra azienda">Compagnia</a></li>
+                    <li><a href="#" title="I nostri contatti">Contatti</a></li>
+                </ul>
+            </nav>
+            <div><!--bottoni social-->
+                <p>f</p>
+                <p>i</p>
+                <p>t</p>
+            </div>
+        </section>
+        <!--FINE SEZIONE 1-->
+        <!--SEZIONE 2-->
+        <section id="bottomFoot">
+            <div>
+                <p>l</p><!--localizzazione-->
+                <span>Italia</span>
+            </div><!--copyright-->
+            <div>&copy; 2024, Sito realizzato da Federica Chiantini come primo progetto del corso Front End Development
+                di <a href="https://www.labfortraining.it/" title="sito della scuola">LabForTraining</a></div>
+        </section>
+        <!--FINE SEZIONE 2-->
+    </footer>
+    <!--## FINE FOOTER-->
+</body>
+
+</html>

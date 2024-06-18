@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Progetto LabAir">
+    <title>LabAir. Just Do it.</title>
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/pagamentoOspite.css">
+    <script src="assets/javascript/pagamentoOspite.js" defer></script>
+</head>
+
+<body>
+    <!--## HEADER ##-->
+    <header>
+        <!--SEZIONE 1-->
+        <div>
+            <a href="index.html"><!--logo-->
+                <img src="assets/images/logo.png" alt="Logo LabAir">
+            </a>
+        </div>
+        <div><!--carrello-->
+            <a href="carrello.html" id="borsetta">p</a>
+        </div>
+        <!--FINE SEZIONE 1-->
+    </header>
+    <!--## FINE HEADER-->
+    <!--## MAIN ##-->
+    <main>
+        <!--# SCHERMATA DI DEFAULT #-->
+        <section id="inizia">
+            <p>Pagamento come utente non registrato.</p>
+            <p>Puoi creare un profilo Member Nike gratuito direttamente al momento del pagamento.</p>
+            <button type="button">Pagamento utenti NON registrati</button>
+        </section>
+        <!--# FINE SCHERMATA DI DEFAULT #-->
+        <!--# FORM #-->
+        <section id="sectForm">
+            <!--# INIZIO FORM DATI ANAGRAFICI #-->
+            <div id="formCompleto">
+                <h1>Pagamento</h1>
+                <div id="colonnaForm">
+                    <form action="page.html" method="get">
+                        <fieldset id="form1">
+                            <legend>Opzioni di consegna</legend>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome">
+                            <label for="cognome">Cognome</label>
+                            <input type="text" name="cognome" id="cognome" placeholder="Cognome">
+                            <label for="indirizzo">Indirizzo</label>
+                            <input type="text" name="indirizzo" id="indirizzo" placeholder="Via/piazza e civico">
+                            <label for="cap">CAP</label>
+                            <input type="number" name="cap" id="cap" placeholder="CAP">
+                            <label for="citta">Citta'</label>
+                            <input type="text" name="citta" id="citta" placeholder="Citta'">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Indirizzo email">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" name="tel" id="telefono" placeholder="Numero di telefono">
+                            <p id="testoErrore1" class="textErrore">Devi compilare tutti i campi per procedere con il
+                                pagamento</p>
+                            <button type="submit" id="bottone">Salva e continua</button>
+                            <hr>
+                        </fieldset>
+                    </form>
+                    <!--# FINE FORM DATI ANAGRAFICI #-->
+                    <!--# INIZIO FORM PAGAMENTO #-->
+                    <div id="pagaDiv">
+                        <h2>Pagamento</h2>
+                        <div id="pagamento" class="chiudi">
+                            <input type="checkbox" id="check" name="check">
+                            <label for="check" id="checkLabel">Possiedi una gift card o un codice promozionale?</label>
+                            <h2>metodo di pagamento</h2>
+                            <input type="radio" name="paga" id="carta">
+                            <label for="carta" class="radioLabel">Carta di debito/credito</label>
+                            <div class="radioImg">
+                                <input type="radio" name="paga" id="paypal">
+                                <img src="assets/images/Paypal.png" alt="paypal logo">
+                            </div>
+                            <div class="radioImg">
+                                <input type="radio" name="paga" id="gpay">
+                                <img src="assets/images/google-pay.png" alt="gpay logo" id="imgGpay">
+                            </div>
+                            <p id="testoErrore2" class="textErrore">Scegli un metodo di pagamento</p>
+                            <input type="text" id="number1" placeholder="Numero della carta">
+                            <input type="text" id="number2" placeholder="MM/AA">
+                            <input type="number" id="number3" placeholder="CVV">
+                            <p id="testoErrore3" class="textErrore">Compila correttamente i dati della carta</p>
+                            <button type="button" id="fine">Acquista ora</button>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <!--# FINE FORM PAGAMENTO #-->
+                <!--# INIZIO DIV CON ORDINE #-->
+                <section id="ordine">
+                    <h2>Carrello</h2>
+                    <div id="carrello">
+                        <p>Subtotale</p>
+                        <p class="secondi">&euro;189.98</p>
+                        <p>Costi di spedizione</p>
+                        <p class="secondi">Gratis</p>
+                        <p>Totale</p>
+                        <p class="secondi">&euro;189.98</p>
+                    </div>
+                    <div id="ricapitoliamo">
+                        <h3>Arriva entro mar 14 mag</h3>
+                        <div class="scarpe">
+                            <img src="assets/images/Scarpa/4.jpg" alt="scarpa">
+                            <div class="testo">
+                                <h4>Nike Dunk Low</h4>
+                                <p>Scarpa - Donna</p>
+                                <p>Taglia - EU 39</p>
+                                <p>Colore - Bianco/Nero</p>
+                                <p>Quantita' - 1 @ &euro;89.99</p>
+                                <p>&euro;89.99</p>
+                            </div>
+                        </div>
+                        <div class="scarpe">
+                            <img src="assets/images/Scarpa_2/6-2.jpg" alt="scarpa">
+                            <div class="testo">
+                                <h4>Nike Dunk Low</h4>
+                                <p>Scarpa - Uomo</p>
+                                <p>Taglia - EU 43</p>
+                                <p>Colore - Bianco/Verde</p>
+                                <p>Quantita' - 1 @ &euro;99.99</p>
+                                <p>&euro;99.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!--# FINE FORM #-->
+        <!--# FINE DIV CON ORDINE #-->
+        <!--# INIZIO ORDINE EFFETTUATO #-->
+        <section id="testoFine">
+            <h3>ORDINE: <span>#HDON11750</span></h3>
+            <p>Operazione effettuata con successo</p>
+            <p>Riceverai una email di conferma del tuo ordine</p>
+            <h4>Grazie per il tuo acquisto :)</h4>
+        </section>
+        <!--# FINE ORDINE EFFETTUATO #-->
+    </main>
+    <!--## FINE MAIN-->
+    <!-- # FOOTER # -->
+    <footer>
+        <div>&copy; 2024, Sito realizzato da Federica Chiantini come primo progetto del corso Front End Development di
+            <a href="https://www.labfortraining.it/" title="sito della scuola">LabForTraining</a></div>
+    </footer>
+    <!--## FINE FOOTER-->
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+/*CONTIENE SOLO GLI STILI CAMBIATI DA SCARPA1.CSS PER SCARPA2.HTML*/
+#topMain .scarpe { /*div con dentro mini immagini*/
+    margin-bottom: 2%
+}
+
+#topMain div img { /*grandezza mini immagini*/
+    width: 75%;
+    margin: 0 auto
+}
+
+#videoS { /*mini video*/
+    width: 70%;
+    margin-left: 20%
+}

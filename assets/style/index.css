@@ -1,0 +1,466 @@
+/*   ### INIZIO STILI COMUNI ###  */
+* {
+    box-sizing: border-box
+}
+
+@font-face {
+    font-family: icone;
+    src: url(../fontello-37595ab0/font/social.woff2), url(../fontello-37595ab0/font/social.woff), url(../fontello-37595ab0/font/social.ttf)
+}
+
+#topHead div p,
+#centralHead div span,
+#centralHead div a,
+#centralHead div input,
+#topFoot div p,
+#bottomFoot p {/*tag che hanno lo stesso font-family (icone)*/
+    font-family: icone;
+    margin: 0 .5%;
+    cursor: pointer
+}
+
+body {
+    border: 2px solid #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #161616;
+    background-color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: auto
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+/*   ### FINE STILI COMUNI ###  */
+
+/*   ### INIZIO STILE HEADER ###  */
+header {
+    max-width: 1200px;
+    background-color: #d7d5d5
+}
+
+header section {
+    width: 100%
+}
+
+/*  ## INIZIO SEZIONE 1 ## */
+#topHead {
+    display: flex;
+    justify-content: space-between
+}
+
+#topHead div {
+    width: 25%
+}
+
+#topHead div p {/*icona basket*/
+    font-size: 1.2em;
+    margin-left: 5%
+}
+
+/*inizio stile nav*/
+#topHead nav {
+    width: 40%;
+    margin-top: .5%;
+    margin-right: 1%
+}
+
+#topHead nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: .8em
+}
+
+#topHead nav ul li {
+    border-right: 1px solid #161616;
+    padding: 0 3%
+}
+
+#topHead nav ul li:last-child {
+    padding-right: 0;
+    border-right: none
+}
+
+#topHead nav ul a {
+    text-decoration: none;
+    color: #161616;
+    padding: 1%;
+    cursor: pointer
+}
+
+#topHead nav ul a:hover {
+    border-bottom: #161616 dotted 2px
+}
+/*fine stile nav*/
+/*  ## FINE SEZIONE 1 ## */
+
+/*  ## INIZIO SEZIONE 2 ## */
+#centralHead {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeecec;
+    text-align: center
+}
+
+#centralHead div {
+    width: 20%;
+    padding: .5% 0 .5% 1%
+}
+
+#centralHead div:first-of-type a {
+    display: block
+}
+
+#centralHead div a img {/*logo*/
+    width: 40%
+}
+
+/*inizio stile nav*/
+#centralHead nav {
+    width: 50%;
+    font-size: .7em;
+    padding: 1.5% 0
+}
+
+#centralHead nav ul {
+    display: flex;
+    justify-content: center
+}
+
+#centralHead nav ul li {
+    width: calc(20% - 20px)
+}
+
+#centralHead nav ul li a {
+    text-decoration: none;
+    color: #161616;
+    font-weight: bold;
+    padding: 1%;
+    cursor: pointer
+}
+
+#centralHead nav ul li a:hover {
+    border-bottom: #161616 dotted 2px
+}
+/*fine stile nav*/
+
+#centralHead div:nth-child(3) {
+    width: 20%;
+    padding: 1% 0 1% 1%;
+    float: right
+}
+
+#centralHead div:nth-child(3) input { /*barra search*/
+    border-radius: 30px;
+    width: 50%;
+    padding: 3%;
+    border: none;
+    background-color: #d7d5d5;
+    font-size: .8em
+}
+
+#centralHead div:nth-child(3) input:focus {
+    border: solid 2px #202020;
+    background-color: #eae9e9
+}
+
+#borsetta {
+    text-decoration: none;
+    color: #161616
+}
+/*  ## FINE SEZIONE 2 ## */
+
+/*  ## INIZIO SEZIONE 3 ## */
+#bottomHead {
+    width: 100%
+}
+
+#bottomHead div {
+    margin: 0 auto;
+    text-align: center
+}
+
+#bottomHead div p {
+    margin: .5%
+}
+
+#bottomHead div:nth-child(2) {
+    font-size: .8em
+}
+
+/*  ## FINE SEZIONE 3 ## */
+/*   ### FINE STILE HEADER ###  */
+
+/*   ### INIZIO STILE MAIN ###  */
+/*  ## INIZIO SEZIONE 1 ## */
+#topMain {
+    width: 100%;
+    color: #fef8f8;
+    position: relative;
+    font-size: 1.2em
+}
+
+#topMain div:first-of-type {
+    /*div dei due titoli*/
+    width: 50%;
+    position: absolute;
+    top: 63%;
+    left: 2%;
+    z-index: 10
+}
+
+#topMain div:first-of-type h2 {
+    margin: 0
+}
+
+#topMain div:first-of-type p {
+    margin: 1% 0 0;
+    font-size: .8em
+}
+
+#topMain div:nth-of-type(2) {
+    /*div dei due bottoni*/
+    width: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    z-index: 10
+}
+
+#topMain div:nth-of-type(2) button {
+    border-radius: 30px;
+    padding: 1.2% 0;
+    width: 18%;
+    color: #161616;
+    background-color: #f2f2f2
+}
+
+#topMain div:nth-of-type(2) button:first-of-type {
+    margin-right: .3%
+}
+
+#topMain div:nth-of-type(2) button:hover {
+    border-radius: 30px;
+    padding: 2% 0;
+    color: #fef8f8;
+    background-color: #0a0a0a
+}
+/*  ## FINE SEZIONE 1 ## */
+
+/*  ## INIZIO SEZIONE 2 ## */
+#centralMain {
+    width: 100%
+}
+
+.titBottoni {
+    /*stile comune ai div bottoni*/
+    display: flex;
+    justify-content: space-between
+}
+
+#centralMain h3 {
+    width: 30%;
+    margin: 1%
+}
+
+.bottoniMain {
+    width: 10%;
+    margin: 1%
+}
+
+.bottoniMain button {
+    width: 40%;
+    padding: 10%;
+    margin-right: 5%;
+    background-color: #d7d5d5;
+    border-radius: 55%
+}
+
+.bottoniMain button:hover {
+    background-color: #161616;
+    color: #d7d5d5
+}
+
+.bottoniMain button:last-child {
+    margin-right: 0
+}
+
+#scarpaMain,
+#sportMain,
+#memberMain {
+    /*stile comune slider contenitori delle immagini*/
+    display: flex;
+    gap: 2%;
+    padding: 0 1%;
+    overflow: hidden;
+}
+
+.scarpaSlider,
+.sportSlider,
+.memberSlider {
+    /*stile comune dei singoli div contenenti ogni slide*/
+    flex: 0 0 32%;
+    height: auto
+}
+
+#scarpaMain div div,
+#sportMain div div,
+#memberMain div div {
+    margin: 0;
+    padding: .5%
+}
+
+#scarpaMain div div h4,
+#sportMain div div h4,
+#memberMain div div h4,
+#scarpaMain div div p,
+#sportMain div div p,
+#memberMain div div p {
+    margin: 0
+}
+
+#scarpaMain a,
+#sportMain a,
+#memberMain a {
+    text-decoration: none;
+    color: #161616
+}
+
+#scarpaMain div div p,
+#sportMain div div p,
+#memberMain div div p {
+    font-size: .7em
+}
+
+#scarpaMain div div p:last-of-type,
+#sportMain div div p:last-of-type,
+#memberMain div div p:last-of-type {
+    font-size: .8em
+}
+
+/*stile per i bottoni e i titoli sopra le slide dell'ultimo slider*/
+#memberMain {
+    margin-bottom: 2%
+}
+
+.memberSlider {
+    position: relative
+}
+
+#memberMain div div {
+    position: absolute;
+    bottom: 5%;
+    left: 1%
+}
+
+#memberMain div div p {
+    font-size: .8em;
+    color: #fef8f8;
+    margin: 0 0 .5% 0
+}
+
+#memberMain div div button {
+    border-radius: 30px;
+    padding: 3%;
+    color: #161616;
+    background-color: #f2f2f2;
+    z-index: 12
+}
+
+#memberMain div div button:hover {
+    border-radius: 30px;
+    color: #fef8f8;
+    background-color: #0a0a0a
+}
+/*  ## FINE SEZIONE 2 ## */
+/*   ### FINE STILE MAIN ###  */
+
+/*   ### INIZIO STILE FOOTER ###  */
+footer {
+    background-color: #0a0a0a;
+    color: #fef8f8;
+    padding: 2%
+}
+
+/*  ## INIZIO SEZIONE 1 ## */
+#topFoot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+/*inizio stile nav*/
+#topFoot nav {
+    width: 50%
+}
+
+#topFoot nav ul {
+    display: flex;
+    justify-content: flex-start
+}
+
+#topFoot nav ul li {
+    width: calc(25% - 20px);
+    text-align: left
+}
+
+#topFoot nav ul li:first-of-type {
+    margin-left: 0
+}
+
+#topFoot nav ul li a {
+    text-decoration: none;
+    color: #fef8f8;
+    padding: 1%;
+    font-size: .8em;
+    cursor: pointer
+}
+
+#topFoot nav ul li a:hover {
+    border-bottom: #fef8f8 dotted 2px
+}
+/*fine stile nav*/
+
+#topFoot div {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end
+}
+
+#topFoot div p { /*icone social*/
+    margin-left: 10%
+}
+/*  ## FINE SEZIONE 1 ## */
+
+/*  ## INIZIO SEZIONE 2 ## */
+#bottomFoot {
+    width: 100%;
+    font-size: .8em
+}
+
+#bottomFoot div:first-child { /*div contenente icona e nazione di localizzazione*/
+    width: 20%;
+    padding: 1% 1% 1% 0
+}
+
+#bottomFoot div:first-child p {
+    width: 10%;
+    display: inline-block
+}
+
+#bottomFoot div:first-child span {
+    width: 80%;
+    display: inline-block
+}
+
+#bottomFoot div:nth-of-type(2) { /*copyright*/
+    width: 100%;
+    text-align: center
+}
+/*  ## FINE SEZIONE 2 ## */
+/*   ### FINE STILE FOOTER ###  */
